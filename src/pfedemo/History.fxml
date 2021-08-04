@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="pfedemo.HistoryController">
+    <stylesheets>
+        <URL value="@history.css" />
+    </stylesheets>
+   <children>
+      <VBox id="container" layoutX="10.0" layoutY="10.0" prefHeight="650.0" prefWidth="217.0" style="-fx-background-color: #1564C0;">
+         <children>
+            <Pane prefHeight="135.0" prefWidth="238.0">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="39.0" layoutX="26.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/search.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="63.0" layoutY="53.0" prefHeight="16.0" prefWidth="87.0" text="JAVAFX" textFill="#9eabcd">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="63.0" layoutY="69.0" prefHeight="16.0" prefWidth="158.0" text="ANTIVIRUS-MALWARE" textFill="#fdfdff">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton alignment="TOP_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="44.0" prefWidth="238.0" style="-fx-background-color: #2E90F1;" text="Vue d'ensemble" textFill="#f2ecec">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/check.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutX="10.0" layoutY="145.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="48.0" prefWidth="238.0" style="-fx-background-color: #1976D3;" text="SCAN" textFill="#f2ecec">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/scan.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="4.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutX="10.0" layoutY="197.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="48.0" prefWidth="238.0" style="-fx-background-color: #1976D3;" text="HISTORIQUE" textFill="#f2ecec">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/history.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="4.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutX="10.0" layoutY="197.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="48.0" prefWidth="238.0" style="-fx-background-color: #1976D3;" text="Paramétres" textFill="#f2ecec">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/setting.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="4.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Pane prefHeight="290.0" prefWidth="238.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="167.0" prefHeight="16.0" prefWidth="158.0" text="Software Version : 1.0.0.0" textFill="#fdfdff">
+                     <font>
+                        <Font name="Century Gothic Bold" size="10.0" />
+                     </font>
+                  </Label>
+                  <JFXButton alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="20.0" layoutY="199.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="56.0" prefWidth="172.0" style="-fx-background-color: #25C6DA;" text="Activation" textFill="#f2ecec">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="650.0" prefWidth="785.0">
+         <children>
+            <Pane prefHeight="186.0" prefWidth="784.0" style="-fx-background-color: #2E90F1;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="62.0" layoutX="37.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/laptop.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="109.0" layoutY="36.0" prefHeight="36.0" prefWidth="316.0" text="Détecter l'état du pc" textFill="#fdfdff">
+                     <font>
+                        <Font name="Century Gothic" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="99.0" layoutY="111.0" prefHeight="36.0" prefWidth="158.0" text="Scanner : ACTIVE" textFill="#fdfdff">
+                     <font>
+                        <Font name="Century Gothic" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="99.0" layoutY="123.0" prefHeight="36.0" prefWidth="158.0" text="Last Scan : 07/08/2020" textFill="#fdfdff">
+                     <font>
+                        <Font name="Century Gothic" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="99.0" layoutY="137.0" prefHeight="36.0" prefWidth="158.0" text="Database : 07/08/2020" textFill="#fdfdff">
+                     <font>
+                        <Font name="Century Gothic" size="11.0" />
+                     </font>
+                  </Label>
+                  <JFXButton alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="577.0" layoutY="67.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="56.0" prefWidth="172.0" style="-fx-background-color: #25C6DA;" text="Scan rapide" textFill="#f2ecec">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <TableView layoutX="221.0" layoutY="225.0" prefHeight="200.0" prefWidth="534.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="Identifiant" />
+                <TableColumn prefWidth="91.0" text="titre" />
+                  <TableColumn prefWidth="110.0" text="Date et heures" />
+                  <TableColumn prefWidth="149.0" text="Type" />
+                  <TableColumn fx:id="liste" prefWidth="108.0" text="Action" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
